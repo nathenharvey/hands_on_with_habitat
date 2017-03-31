@@ -7,9 +7,9 @@
 require 'spec_helper'
 
 describe 'hands_on_with_habitat::default' do
-  context 'When all attributes are default, on an unspecified platform' do
+  context 'When all attributes are default, on CentOS 7.2' do
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new
+      runner = ChefSpec::ServerRunner.new(platform: 'CentOS', version: '7.2.1511')
       runner.converge(described_recipe)
     end
 
