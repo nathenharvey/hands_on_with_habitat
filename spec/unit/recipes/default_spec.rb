@@ -16,5 +16,9 @@ describe 'hands_on_with_habitat::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'includes the habitat_workstation recipe' do
+      expect(chef_run).to include_recipe 'habitat_workstation::default'
+    end
   end
 end
