@@ -1,10 +1,11 @@
 name 'hands_on_with_habitat'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'all_rights'
-description 'Installs/Configures hands_on_with_habitat'
-long_description 'Installs/Configures hands_on_with_habitat'
+maintainer 'Nathen Harvey'
+maintainer_email 'nathen.harvey@gmail.com'
+license 'Apache-2.0'
+description 'Configures a node for Hands on with Habitat Workshop'
+long_description 'Configures a node for Hands on with Habitat Workshop'
 version '0.1.0'
+depend 'habitat'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
